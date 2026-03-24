@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homemade Delights - Nutrition Facts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff7f0;
+        }
+
+        /* NAVBAR WITH LOGO + BRAND NAME */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffe0ac;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            padding: 10px 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-brand .logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .nav-brand .brand-name {
+            font-size: 1.5em;
+            color: #ff6f91;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            background-color: #ffb6b9;
+            color: white;
+        }
+
+        /* Current page highlight - static */
+        .nav-links a.active {
+            background-color: #ff6f91; /* pastel pink */
+            color: white;
+        }
+
+        .nav-links a.active:hover {
+            background-color: #ff6f91; /* same color, no change */
+            color: white;
+        }
+
+        /* PAGE HEADER */
+        header {
+            text-align: center;
+            padding: 120px 20px 50px;
+            color: #333;
+            margin-top: 130px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #ff6f91;
+        }
+
+        /* NUTRITION TABLE */
+        .nutrition-table {
+            max-width: 900px;
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 90%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .nutrition-table th, .nutrition-table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nutrition-table thead {
+            background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+            color: #ff6f91;
+        }
+
+        .nutrition-table tbody tr {
+            background-color: #fff0f5;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .nutrition-table tbody tr:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(255, 111, 145, 0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #ffe0ac;
+            color: #333;
+            margin-top: 40px;
+            font-size: 14px;
+            border-top: 1px solid #ffb6b9;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-brand">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <span class="brand-name">Homemade Delights</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="nutri.html"> Facts</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header>
+    <h1>Nutrition Facts</h1>
+</header>
+
+
+<table class="nutrition-table">
+    <thead>
+        <tr>
+            <th>Dish Name</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Carbs</th>
+            <th>Fat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pork Adobo</td>
+            <td>320 kcal</td>
+            <td>25g</td>
+            <td>10g</td>
+            <td>20g</td>
+        </tr>
+        <tr>
+            <td>Kare-Kare</td>
+            <td>400 kcal</td>
+            <td>30g</td>
+            <td>15g</td>
+            <td>25g</td>
+        </tr>
+        <tr>
+            <td>Menudo</td>
+            <td>350 kcal</td>
+            <td>28g</td>
+            <td>12g</td>
+            <td>22g</td>
+        </tr>
+        <tr>
+            <td>Lumpiang Shanghai</td>
+            <td>290 kcal</td>
+            <td>18g</td>
+            <td>20g</td>
+            <td>15g</td>
+        </tr>
+        <tr>
+            <td>Bistek</td>
+            <td>360 kcal</td>
+            <td>30g</td>
+            <td>8g</td>
+            <td>24g</td>
+        </tr>
+        <tr>
+            <td>Fried Chicken</td>
+            <td>400 kcal</td>
+            <td>35g</td>
+            <td>12g</td>
+            <td>25g</td>
+        </tr>
+        <tr>
+            <td>Halo-Halo</td>
+            <td>180 kcal</td>
+            <td>5g</td>
+            <td>35g</td>
+            <td>2g</td>
+        </tr>
+        <tr>
+            <td>Leche Flan</td>
+            <td>250 kcal</td>
+            <td>6g</td>
+            <td>30g</td>
+            <td>12g</td>
+        </tr>
+        <tr>
+            <td>Macaroni Salad</td>
+            <td>220 kcal</td>
+            <td>4g</td>
+            <td>28g</td>
+            <td>10g</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- FOOTER -->
+<footer>
+    <p>© Homemade Delights 2026.</p>
+</footer>
+
+</body>
+</html>

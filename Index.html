@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homemade Delights</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff7f0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffe0ac;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-brand .logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .nav-brand .brand-name {
+            font-size: 1.5em;
+            color: #ff6f91;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background-color: #ffb6b9;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px 50px;
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: 130px;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* FULL-WIDTH SECTIONS */
+        .intro-section,
+        .services {
+            width: 100%;       /* full width */
+            margin: 0;         /* remove auto spacing */
+            border-radius: 0;  /* remove rounded corners */
+            box-shadow: none;  /* remove shadows */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .intro-section {
+            background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+        }
+
+        .intro-section h2 {
+            color: #ff6f91;
+            margin-bottom: 15px;
+        }
+
+        .intro-section p {
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .services {
+            background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #ff6f91;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 220px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 111, 145, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #ffe0ac;
+            color: #333;
+            font-size: 14px;
+            border-top: 1px solid #ffb6b9;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-brand">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <span class="brand-name">Homemade Delights</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="nutri.html">Facts</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>Homemade Delights</h1>
+</header>
+
+<div class="intro-section">
+    <h2>Welcome to Homemade Delights!</h2>
+    <p>Enjoy our cozy, home cooked meals and perfect for your daily cravings or small gatherings!</p>
+</div>
+
+<div class="services">
+    <h2>OUR BEST FOOD</h2>
+    <div class="gallery">
+        <img src="porkadobo.jpg" alt="Pork Adobo">
+        <img src="kare-kare.jpg" alt="Kare-Kare">
+        <img src="menudo.jpg" alt="Menudo">
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© Homemade Delights 2026.</p>
+</footer>
+
+</body>
+</html>

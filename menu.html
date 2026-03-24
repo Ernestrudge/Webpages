@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homemade Delights - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff7f0;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffe0ac;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+            z-index: 100;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #ffb6b9;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 120px 20px 50px;
+            color: #333;
+        }
+
+        /* HEADER BOX */
+        .menu-header-box {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffe4e1, #fff0f5); /* same pastel gradient as menu cards */
+            padding: 20px 40px;
+            border-radius: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .menu-header-box h1 {
+            color: #ff6f91;
+            margin: 0;
+        }
+
+        /* MENU SECTION */
+        .menu-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .menu-item {
+            background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 111, 145, 0.4);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin-bottom: 5px;
+            color: #ff6f91;
+        }
+
+        .menu-item p {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #ffe0ac;
+            color: #333;
+            margin-top: 40px;
+            font-size: 14px;
+            border-top: 1px solid #ffb6b9;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="nutri.html"> Facts</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <div class="menu-header-box">
+        <h1>Our Menu</h1>
+    </div>
+</header>
+
+<!-- BEST DISHES SECTION -->
+<h2 style="text-align:center; color:#ff6f91; margin-top:20px;">Best Homemade Dishes</h2>
+<div class="menu-section">
+    <div class="menu-item">
+        <img src="porkadobo.jpg" alt="Pork Adobo">
+        <h3>Pork Adobo</h3>
+        <p>120</p>
+
+    </div>
+    <div class="menu-item">
+        <img src="kare-kare.jpg" alt="Kare-Kare">
+        <h3>Kare-Kare</h3>
+        <p>150</p>
+    </div>
+    <div class="menu-item">
+        <img src="menudo.jpg" alt="Menudo">
+        <h3>Menudo</h3>
+        <p>130</p>
+    </div>
+    <div class="menu-item">
+        <img src="lumpia.jpg" alt="Lumpiang Shanghai">
+        <h3>Lumpiang Shanghai</h3>
+        <p>100</p>
+    </div>
+    <div class="menu-item">
+        <img src="bestik.jpg" alt="Bistek Tagalog">
+        <h3>Bistek Tagalog</h3>
+        <p>140</p>
+    </div>
+    <div class="menu-item">
+        <img src="fried.jpg" alt="Fried Chicken">
+        <h3>Fried Chicken</h3>
+        <p>120</p>
+    </div>
+</div>
+
+<!-- DESSERTS SECTION -->
+<h2 style="text-align:center; color:#ff6f91; margin-top:50px;">Desserts</h2>
+<div class="menu-section">
+    <div class="menu-item">
+        <img src="halo.jpg" alt="Halo-Halo">
+        <h3>Halo-Halo</h3>
+        <p>90</p>
+    </div>
+    <div class="menu-item">
+        <img src="lecheflan.jpg" alt="Leche Flan">
+        <h3>Leche Flan</h3>
+        <p>80</p>
+    </div>
+    <div class="menu-item">
+        <img src="salad.jpg" alt="Macaroni Salad">
+        <h3>Macaroni Salad</h3>
+        <p>85</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Homemade Delights. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
